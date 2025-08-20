@@ -1,0 +1,5 @@
+- README must include:
+  - How to install & run Redis.
+  - How to run the app.
+  - Example logs showing cache vs CSV computation.
+  - Performance notes (e.g., “First run took 4.8s, second run took 0.03s”).
