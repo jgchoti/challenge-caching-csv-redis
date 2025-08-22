@@ -50,18 +50,6 @@ The project includes a custom `redis.conf` optimized for large dataset processin
 maxmemory 1610612736
 maxmemory-policy allkeys-lru
 
-# Enable persistence to prevent data loss
-save 900 1
-save 300 10
-save 60 10000
-
-# Performance optimizations for hash operations
-hash-max-ziplist-entries 512
-hash-max-ziplist-value 64
-
-# Network optimizations for large data transfers
-client-output-buffer-limit normal 0 0 0
-client-output-buffer-limit replica 256mb 64mb 60
 ```
 
 ### Docker Compose Configuration

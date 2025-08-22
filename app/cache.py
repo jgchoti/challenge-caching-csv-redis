@@ -10,7 +10,7 @@ import pandas as pd
 import kagglehub
 from io import StringIO
 
-logging.basicConfig(filename='app/app.log', level=logging.INFO)
+logging.basicConfig(filename='app.log', level=logging.INFO)
 
 class Cache:
     def __init__(self, redis_host: str = None, redis_port: int = None, redis_db: int = 0, default_chunks=100):
